@@ -6,7 +6,7 @@ extern "C" {
 #define MAIN_H_
 
 #include <math.h>
-    
+
 #ifdef ARDUINO
 #include <stdfix.h> // fixed point library
 #endif
@@ -41,7 +41,7 @@ extern "C" {
 
 int main_avr( int runtimeMs, REAL* startState );
 
-#define DEBUG 0
+#define DEBUG 1
 
 // detect if we're in matlab using mex to compile
 // http://stackoverflow.com/questions/24679744/check-if-compiling-with-matlab-mex

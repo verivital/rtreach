@@ -1,4 +1,17 @@
-// example call: ./rtreach_arm 100 -0.1 0.0 0.0 0.0
+// example call: ./rtreach 100 -0.1 0.0 0.0 1.1
+// example call output:
+// started!
+// Argc: 6
+// runtime: 100 ms
+// x_0[0]: -0.100000
+// x_0[1]: 0.000000
+// x_0[2]: 0.000000
+// x_0[3]: 1.100000
+// potential of start state = 0.986088
+// ms: 468
+// done, result = safe
+//
+// example call (arm): ./rtreach_arm 100 -0.1 0.0 0.0 0.0
 // ./rtreach_arm 100 -0.1 0.4 0.0 0.0
 
 #include <stdio.h>
