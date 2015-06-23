@@ -1,4 +1,16 @@
 Real-time reachability implementation
+Version 0.1
+June 22, 2015
+http://verivital.com/rtreach/
+
+License: http://verivital.uta.edu/rtreach/rtreach_license.pdf
+
+Stanley Bak: http://stanleybak.com/
+Taylor Johnson: http://www.taylortjohnson.com/
+Marco Caccamo: http://pertsserver.cs.uiuc.edu/~mcaccamo/
+Lui Sha: https://publish.illinois.edu/cpsintegrationlab/people/lui-sha/
+
+Theory described in RTSS 2014 paper: http://www.taylortjohnson.com/research/bak2014rtss.pdf
 
 Directory structure:
 main.c: this is the main file
