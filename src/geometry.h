@@ -11,7 +11,15 @@
 // pick the dynamics header to compile (this defines NUM_DIMS)
 //#include "dynamics_harmonic_oscillator.h"
 //#include "dynamics_vanderpol.h"
+#ifdef LINEAR_PENDULUM
 #include "dynamics_pendulum.h"
+#else
+#ifdef NONLINEAR_PENDULUM
+#include "dynamics_nonlinear_pendulum.h"
+#else
+#error Dynamics File was not defined as compile flag (for example, try -DLINEAR_PENDULUM while compiling)
+#endif
+#endif
 
 #define NUM_FACES (2 * NUM_DIMS)
 
