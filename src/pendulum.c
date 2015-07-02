@@ -166,12 +166,12 @@ bool shouldStop(REAL state[NUM_DIMS], REAL simTime, void* p)
 //		rv = false;
 
 		REAL* stopTime = (REAL*)p;
-		DEBUG_PRINT("p from pointer: %f\n\r", (REAL *)p);
+		DEBUG_PRINT("p from pointer: %p\n\r", (REAL *)p);
 		*stopTime = simTime; // should set *p = simTime?
 //		*p = simTime;
 //		*p = maxTime;
 
-		DEBUG_PRINT("\n\r\n\rp: %f\n\rstopTime: %f\n\rrv: %d\n\r", (REAL*)p, *stopTime, rv);
+		DEBUG_PRINT("\n\r\n\rp: %p\n\rstopTime: %f\n\rrv: %d\n\r", (REAL*)p, *stopTime, rv);
 		if (rv) {
 			DEBUG_PRINT("RV TRUE\n\r");
 		}
@@ -234,7 +234,7 @@ int isSafe(int runtimeMs, REAL state[NUM_DIMS])
 	int rv = 0; // default return val of 0
 	int startMs = milliseconds();
 
-        REAL pot = potential(state[0], state[1], state[2], state[3]);
+    REAL pot = potential(state[0], state[1], state[2], state[3]);
 
 //	if (pot > 1) {
 //		rv = 0; // lmi unsafe
