@@ -54,7 +54,7 @@ void hyperrectangle_to_file(FILE* fout, HyperRectangle* r, int styleIndex)
 
 		const char* styleStr[] =
 		{
-			"set label 'Initial Point' at %f, %f point pointtype 3 lc rgb 'blue' tc rgb 'blue'",
+			"set label ' Init' at %f, %f point pointtype 3 lc rgb 'blue' tc rgb 'blue'",
 			"set obj rect from %f, %f to %f, %f fc rgbcolor 'dark-green' fs solid 0.2 noborder\n",
 			"set obj rect from %f, %f to %f, %f fc rgbcolor 'red' fs solid 0.3 noborder\n",
 		};
@@ -68,16 +68,6 @@ void hyperrectangle_to_file(FILE* fout, HyperRectangle* r, int styleIndex)
 bool intermediateState(HyperRectangle* r)
 {
 	bool allowed = true;
-	const REAL FIFTEEN_DEGREES_IN_RADIANS = 0.2618;
-
-	// check if the constraints are satisfied
-
-	if (r->dims[0].min < -1 || r->dims[0].max > 1) // position limits
-		allowed = false;
-	else if (r->dims[1].min < -1 || r->dims[1].max > 1) // velocity limits
-		allowed = false;
-	else if (r->dims[2].min < -FIFTEEN_DEGREES_IN_RADIANS || r->dims[2].max > FIFTEEN_DEGREES_IN_RADIANS)
-		allowed = false;
 
 	hyperrectangle_to_file(f_intermediate, r,1);
 

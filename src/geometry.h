@@ -15,7 +15,7 @@
 #include "dynamics_pendulum.h"
 #else
 #ifdef NONLINEAR_PENDULUM
-#include "dynamics_nonlinear_pendulum.h"
+#include "dynamics_pendulum_nonlinear.h"
 #else
 #error Dynamics File was not defined as compile flag (for example, try -DLINEAR_PENDULUM while compiling)
 #endif
