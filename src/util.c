@@ -92,7 +92,7 @@ long int milliseconds()
 
 
 
-	DEBUG_PRINT("ms: %li\n\r", ds);
+	//DEBUG_PRINT("ms: %li\n\r", ds);
 
 //	return difSec * 1000 + ms;
 	return ds;

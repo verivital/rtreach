@@ -23,6 +23,6 @@ x86:
 
 x86_plot_linear_pendulum:
 	$(CC) $(FLAGS) main_plots.c dynamics_converging_oscillator.c dynamics_harmonic_oscillator.c face_lift.c geometry.c dynamics_pendulum.c dynamics_vanderpol.c pendulum_plots.c simulate.c util.c -o rtreach_plots.exe -DLINEAR_PENDULUM
-
-plot:
-	$(GNUPLOT) < plot.gnuplot 
+    
+x86_plot_nonlinear_pendulum:
+	$(CC) $(FLAGS) main_plots.c dynamics_converging_oscillator.c dynamics_harmonic_oscillator.c face_lift.c geometry.c dynamics_pendulum_nonlinear.c interval.c dynamics_vanderpol.c pendulum_plots.c simulate.c util.c -o rtreach_plots.exe -DNONLINEAR_PENDULUM
