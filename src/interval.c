@@ -2,6 +2,11 @@
 #include "stdio.h"
 #include <math.h>
 
+// for matlab, compiler may not have M_PI defined
+#ifndef M_PI
+#  define M_PI 3.141592653589793238
+#endif
+
 #define TWO_PI (2*M_PI)
 
 Interval new_interval(double min, double max)
