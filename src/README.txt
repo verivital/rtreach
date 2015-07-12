@@ -1,7 +1,15 @@
 Real-time reachability implementation
+http://verivital.com/rtreach/
+
+RELEASE HISTORY
+
+Version 0.11
+July 12, 2015
+* Refactored dynamics to be used for analysis by makefile parameter
+
 Version 0.1
 June 22, 2015
-http://verivital.com/rtreach/
+* Initial release
 
 License: http://verivital.uta.edu/rtreach/rtreach_license.pdf
 

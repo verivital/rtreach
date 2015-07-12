@@ -1,4 +1,6 @@
 // example call: ./rtreach 100 -0.1 0.0 0.0 1.1
+// example matlab call: rtreach(100, -0.1, 0.0, 0.0, 1.1)
+//
 // example call output:
 // started!
 // Argc: 6
@@ -68,7 +70,7 @@ int main( int argc, const char* argv[] )
 
 #ifdef DEBUG
 #ifdef MATLAB
-	mexPrintf("runtime = %f\n", runtimeMs);
+	mexPrintf("runtime = %d\n", runtimeMs);
 	mexPrintf("x[0] = %f\nx[1] = %f\nx[2] = %f\nx[3] = %f\n", startState[0], startState[1], startState[2], startState[3]);
 #endif
 #endif
